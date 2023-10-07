@@ -1,5 +1,5 @@
 /* Tipos de variables y sus diferencias  */
-
+'use strict';
 /* Var */
 
 var numero = 10;
