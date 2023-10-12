@@ -6,7 +6,7 @@ var imprime = '';
 switch (edad) {
   case 18:
     imprime = 'Acabas de obtener tu DUI';
-    break; /* siempre utilizar break para detener el flujo cuando la condición se haya cumplido */
+    break; /* siempre utilizar break para detener el flujo cuando la condición se haya cumplido  */
   case 25:
     imprime = 'ya eres un adulto';
     break;
