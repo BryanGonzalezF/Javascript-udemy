@@ -8,7 +8,10 @@ var lenguajes = new Array(
   'Java',
   'JS',
   'GO',
-  'PHP'
+  'PHP',
+  'C#',
+  'C',
+  'C++'
 ); /* <--- asi definimos un objeto como array */
 
 console.log(lenguajes);
@@ -35,3 +38,19 @@ if (elemento >= nombre.length - 1) {
   alert(nombre[elemento]);
 } */
 /* <-- logica para mostrar un elemento de en un array */
+document.write('<h1>Lenguajes de programación</h1>');
+document.write('<ul>');
+for (let i = 0; i < lenguajes.length; i++) {
+  document.write(
+    `<li> ${lenguajes[i]} </li>`
+  ); /* <--- manera tradicional de obtener los
+  datos dentro de un array */
+}
+document.write('</ul>');
+
+document.write('<ul>');
+lenguajes.forEach((elemento, index) => {
+  document.write(`<li> ${index + 1} - ${elemento} </li>`);
+});
+document.write('</ul>'); /* <--- manera más sencilla de obtener los datos con 
+el metodo forEach que hace el recorrido por cada elemento del array */
