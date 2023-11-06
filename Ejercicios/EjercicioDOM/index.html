@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Ejercicio DOM</h1>
+
+    <main>
+      <div class="form">
+        <form action="" method="POST" id="formInfo" onsubmit="return false">
+          <label for="nombre">Nombre</label><br />
+          <input type="text" name="nombre" id="nombre" /><br />
+          <label for="apellido">Apellido</label> <br />
+          <input type="text" name="apellido" id="apellido" /><br />
+          <label for="edad">Edad</label><br />
+          <input type="number" name="edad" id="edad" /><br />
+
+          <input type="submit" value="Enviar" id="submit" />
+        </form>
+      </div>
+      <div class="info dashed"></div>
+    </main>
+  </body>
+</html>
+
+<!-- formulario 
+1 - campos nombre, apellido, edad
+2 - boton para enviar el formulario
+3 - mostrar datos por pantalla
+4 - tener un boton que al darle clic nos muestra los datos actuales del formulario
+
+-->
