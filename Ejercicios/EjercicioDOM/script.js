@@ -6,13 +6,30 @@ window.addEventListener('load', () => {
 
   boxDashed.style.display = 'none';
 
-  formulario.addEventListener('submit', () => {
+  formulario.addEventListener('submit', function () {
     console.log('Evento submit capturado');
+    console.log(this);
     let formNombre = document.querySelector('#nombre').value;
     let formApellido = document.querySelector('#apellido').value;
-    let formEdad = document.querySelector('#edad').value;
+    let formEdad = parseInt(document.querySelector('#edad').value);
 
     let datoUsuario = [formNombre, formApellido, formEdad];
+
+    if (formNombre.trim() === null || formNombre.trim().length === 0) {
+      alert('Los datos no son validos');
+      return false;
+    }
+
+    if (formApellido.trim() === null || formApellido.trim().length === 0) {
+      alert('Los datos no son validos');
+      return false;
+    }
+
+    if (formEdad === null || formEdad <= 0 || isNaN(formEdad)) {
+      alert('Los datos no son validos');
+      return false;
+    }
+
     boxDashed.style.display = 'block';
 
     for (let indice in datoUsuario) {
