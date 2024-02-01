@@ -11,3 +11,19 @@ window.addEventListener('load', () => {
     console.log(formNombre, formApellido, formEdad);
   });
 }); // fin del script
+
+function findFirstRepeated(gifts) {
+  // Code here
+  let contador = {};
+  for (let i = 0; i < gifts.length; i++) {
+    let numero = gifts[i];
+    if (contador[numero] === undefined) {
+      contador[numero] = 1;
+      console.log(contador);
+    } else {
+      console.log(gifts[i]);
+    }
+  }
+  return -1;
+}
+findFirstRepeated([2, 1, 3, 5, 3, 2]);
